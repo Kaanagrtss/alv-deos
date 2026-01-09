@@ -2,49 +2,148 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>AI ile Kişiye Özel Video</title>
+  <title>AI Video Creator | Kişiye Özel Yapay Zeka Videoları</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    :root {
+      --primary-color: #facc15; /* Canlı Sarı */
+      --bg-dark: #0f172a;
+      --card-bg: #1e293b;
+      --text-gray: #e5e7eb;
+      --whatsapp-green: #25D366;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-gray);
       margin: 0;
       padding: 0;
+      line-height: 1.6;
     }
+
     .container {
-      max-width: 800px;
+      max-width: 700px;
       margin: auto;
-      padding: 20px;
+      padding: 40px 20px;
     }
-    h1, h2 {
-      color: #facc15;
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
     }
+
+    h1 {
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
     .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 20px;
+      background: var(--card-bg);
+      padding: 25px;
+      border-radius: 16px;
+      margin-bottom: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease, border-color 0.3s ease;
     }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--primary-color);
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-top: 0;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
     ul {
-      padding-left: 20px;
+      list-style: none;
+      padding: 0;
     }
-    a.whatsapp {
+
+    ul li {
+      margin-bottom: 12px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '✅';
+      position: absolute;
+      left: 0;
+    }
+
+    .price-tag {
+      font-weight: bold;
+      color: #fff;
+      background: rgba(250, 204, 21, 0.2);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .cta-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .whatsapp-btn {
       display: inline-block;
-      margin-top: 15px;
-      padding: 14px 22px;
-      background: #25D366;
+      padding: 18px 30px;
+      background: var(--whatsapp-green);
       color: white;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 50px;
       font-weight: bold;
-      font-size: 16px;
+      font-size: 18px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
     }
+
+    .whatsapp-btn:hover {
+      background: #1eb954;
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      font-size: 0.9rem;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .feature-item {
+      background: rgba(255,255,255,0.03);
+      padding: 10px;
+      border-radius: 8px;
+    }
+
     footer {
       text-align: center;
-      opacity: 0.6;
-      font-size: 14px;
-      margin-top: 40px;
+      opacity: 0.5;
+      font-size: 0.9rem;
+      margin-top: 60px;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.8rem; }
+      .features-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -52,47 +151,48 @@
 <body>
   <div class="container">
 
-    <h1>🎬 AI ile Kişiye Özel Video Hazırlıyorum</h1>
-    <p>
-      Gönderdiğiniz fotoğraflar üzerinden yapay zeka ile
-      size özel videolar oluşturuyorum.
-    </p>
+    <header>
+      <h1>🎬 Sizi Geleceğe Taşıyalım</h1>
+      <p class="subtitle">Sadece bir fotoğraf gönderin, yapay zeka ile sizi etkileyici bir videoya dönüştürelim.</p>
+    </header>
 
     <div class="card">
-      <h2>📌 Hizmet</h2>
-      <ul>
-        <li>Kişiye özel AI video</li>
-        <li>Fotoğrafa dayalı video oluşturma</li>
-        <li>Özel konsept & stil seçenekleri</li>
-      </ul>
+      <h2>🚀 Neler Yapıyoruz?</h2>
+      <p>Sıradan fotoğraflarınızı sosyal medyada fark yaratacak, sinematik ve yüksek kaliteli AI videolarına dönüştürüyoruz. Profiliniz için benzersiz içerikler üretiyoruz.</p>
+      <div class="features-grid">
+        <div class="feature-item">⚡ Hızlı Teslimat</div>
+        <div class="feature-item">💎 HD Kalite</div>
+        <div class="feature-item">🎭 Özel Konseptler</div>
+        <div class="feature-item">🎵 Müzik Desteği</div>
+      </div>
     </div>
 
     <div class="card">
-      <h2>💰 Fiyatlar</h2>
+      <h2>💎 Avantajlı Paketler</h2>
       <ul>
-        <li>1 kısa video: <b>200 TL</b></li>
-        <li>3 video paket: <b>500 TL</b></li>
-        <li>Özel istek: <b>konuşulur</b></li>
+        <li><b>Tekli Deneyim:</b> 1 Adet Özel Video — <span class="price-tag">200 TL</span></li>
+        <li><b>Popüler Paket:</b> 3 Adet Video (Farklı Stiller) — <span class="price-tag">500 TL</span></li>
+        <li><b>Business:</b> Kurumsal & Özel İstekler — <span class="price-tag">Teklif Alın</span></li>
       </ul>
     </div>
 
-    <div class="card">
-      <h2>📝 Nasıl Sipariş Verilir?</h2>
-      <ol>
-        <li>WhatsApp’tan bana yaz</li>
-        <li>Fotoğraf ve isteğini gönder</li>
-        <li>Videon hazır olsun 🎉</li>
-      </ol>
-
-      <a class="whatsapp"
-         href="https://wa.me/905550969901?text=Merhaba%20AI%20ile%20kişiye%20özel%20video%20siparişi%20vermek%20istiyorum"
-         target="_blank">
-        WhatsApp’tan Sipariş Ver
-      </a>
+    <div class="card" style="text-align: center;">
+      <h2>🔥 Hemen Başlayalım!</h2>
+      <p>Sipariş vermek veya örnek çalışmaları görmek için tek yapman gereken WhatsApp üzerinden iletişime geçmek.</p>
+      
+      <div class="cta-container">
+        <a class="whatsapp-btn"
+           href="https://wa.me/905550969901?text=Merhaba,%20AI%20video%20paketleriniz%20hakkında%20bilgi%20almak%20istiyorum."
+           target="_blank">
+          WhatsApp ile Sipariş Ver
+        </a>
+      </div>
+      <p style="font-size: 0.8rem; margin-top: 15px; opacity: 0.7;">Ortalama cevap süresi: 15 dakika</p>
     </div>
 
     <footer>
-      © 2026 | AI Video Hizmeti
+      © 2026 | Premium AI Video Service <br>
+      Tüm dünyadan sipariş kabul edilir.
     </footer>
 
   </div>
