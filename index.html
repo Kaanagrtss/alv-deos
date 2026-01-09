@@ -89,13 +89,6 @@
       border-bottom: 1px solid rgba(255,255,255,0.05);
     }
 
-    .price-name {
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
     .price-tag {
       background: linear-gradient(135deg, #facc15 0%, #ca8a04 100%);
       color: #000;
@@ -103,16 +96,6 @@
       padding: 6px 14px;
       border-radius: 10px;
       font-size: 0.95rem;
-      white-space: nowrap;
-    }
-
-    .popular-badge {
-      background: #ef4444;
-      color: white;
-      font-size: 0.7rem;
-      padding: 2px 8px;      border-radius: 20px;
-      text-transform: uppercase;
-      font-weight: bold;
     }
 
     .whatsapp-btn {
@@ -129,11 +112,19 @@
       box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
     }
 
+    .email-link {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
     footer {
       text-align: center;
-      opacity: 0.4;
+      opacity: 0.6;
       margin-top: 50px;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
     }
   </style>
 </head>
@@ -158,37 +149,29 @@
     </div>
 
     <div class="card">
-      <h2>💎 Avantajlı Paketler</h2>
-      
+      <h2>💎 Paket Seçenekleri</h2>
       <div class="price-item">
-        <div class="price-name">📸 1 Adet Özel Fotoğraf</div>
-        <div class="price-tag">199.99 TL</div>
+        <span>📸 1 Adet Özel Fotoğraf</span>
+        <span class="price-tag">199.99 TL</span>
       </div>
-
       <div class="price-item">
-        <div class="price-name">
-          🎬 1 Adet Özel Stilli Video 
-          <span class="popular-badge">Popüler</span>
-        </div>
-        <div class="price-tag">349.99 TL</div>
+        <span>🎬 1 Adet Özel Stilli Video</span>
+        <span class="price-tag">349.99 TL</span>
       </div>
-
-      <div class="price-item" style="border: none;">
-        <div class="price-name">💼 Business & Özel İstek</div>
-        <div class="price-tag" style="background: #475569; color: white;">Teklif Al</div>
-      </div>
+      <p style="font-size: 0.8rem; margin-top: 15px; opacity: 0.8; text-align: center;">* IBAN ve Ödeme detayları için WhatsApp üzerinden iletişime geçiniz.</p>
     </div>
 
     <div class="card" style="background: transparent; border: none; box-shadow: none;">
       <a class="whatsapp-btn"
-         href="https://wa.me/905550969901?text=Merhaba,%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum."
+         href="https://wa.me/905550969901?text=Merhaba,%20hizmetleriniz%20hakkında%20bilgi%20almak%20ve%20sipariş%20vermek%20istiyorum."
          target="_blank">
-        HEMEN WHATSAPP'TAN YAZ
+        BİLGİ AL & SİPARİŞ VER
       </a>
     </div>
 
     <footer>
       © 2026 | AI Video Services <br>
+      Sipariş ve Destek: <a href="mailto:kaanbeirem7@gmail.com" class="email-link">kaanbeirem7@gmail.com</a> <br>
       WhatsApp: 0555 096 99 01
     </footer>
   </div>
