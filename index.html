@@ -59,7 +59,6 @@
       margin-bottom: 20px;
     }
 
-    /* Galeri */
     .gallery-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -72,15 +71,17 @@
       overflow: hidden;
       aspect-ratio: 9/16; 
       background: #000;
+      border: 1px solid rgba(255,255,255,0.1);
     }
 
-    .gallery-item img {
+    .gallery-item img, .gallery-item iframe {
       width: 100%;
       height: 100%;
+      border: none;
       object-fit: cover;
     }
 
-    /* Paketler - Yeni Güncelleme */
+    /* Fiyatlandırma Bölümü */
     .price-item {
       display: flex;
       justify-content: space-between;
@@ -90,20 +91,20 @@
     }
 
     .price-name {
+      font-weight: 500;
       display: flex;
       align-items: center;
-      gap: 10px;
-      font-weight: 500;
+      gap: 8px;
     }
 
     .price-tag {
-      color: #fff;
       background: linear-gradient(135deg, #facc15 0%, #ca8a04 100%);
       color: #000;
       font-weight: bold;
-      padding: 5px 12px;
-      border-radius: 8px;
-      font-size: 1rem;
+      padding: 6px 14px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      white-space: nowrap;
     }
 
     .popular-badge {
@@ -149,8 +150,12 @@
     <div class="card">
       <h2>✨ Örnek Çalışmalarım</h2>
       <div class="gallery-grid">
-        <div class="gallery-item"><img src="https://via.placeholder.com/300x533?text=Foto+1"></div>
-        <div class="gallery-item"><img src="https://via.placeholder.com/300x533?text=Video+1"></div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/NgBwFsbg/image.png" alt="AI Fotoğraf">
+        </div>
+        <div class="gallery-item">
+          <iframe src="https://streamable.com/e/5v4bkt?autoplay=1&muted=1&nocontrols=1" allow="autoplay"></iframe>
+        </div>
       </div>
     </div>
 
@@ -171,8 +176,8 @@
       </div>
 
       <div class="price-item" style="border: none;">
-        <div class="price-name">💼 Business & Kurumsal</div>
-        <div class="price-tag" style="background: #475569; color: white;">Teklif Alın</div>
+        <div class="price-name">💼 Business & Özel İstek</div>
+        <div class="price-tag" style="background: #475569; color: white;">Teklif Al</div>
       </div>
     </div>
 
